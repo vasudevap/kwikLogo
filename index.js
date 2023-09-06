@@ -60,6 +60,7 @@ function init() {
         //use generateMarkdown to populate the template using answers
         //use writeReadme to write the populated template to the local file
         createLogoSVG(generateSVG(answers));
+        <svg width="200" height="200" viewBox="0 0 100 100">…</svg>
         
     })
     .catch((error) => {
