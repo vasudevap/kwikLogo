@@ -2,6 +2,7 @@
 const fs = require('fs'); // for reading writing to files
 const inquirer = require('inquirer'); // for prompting user
 const shapes = require('./lib/shape'); // for shape classes
+const generateSVG = require('./utils/generateSVG'); // for shape classes
 
 // questions for user input
 const userPrompts = [
@@ -59,14 +60,16 @@ function init() {
 
         //use generateMarkdown to populate the template using answers
         //use writeReadme to write the populated template to the local file
-        createLogoSVG(generateSVG(answers));
+        // createLogoSVG(generateSVG(answers));
+        // console.log(answers);
+        console.log(generateSVG(answers));
         
     })
     .catch((error) => {
         if (error.isTtyError) {
             console.log("Prompt couldn't be rendered in the current environment");
         } else {
-            console.log("Something else went wrong");
+            console.log(error);
         }
     });
 }
