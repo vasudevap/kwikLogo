@@ -1,6 +1,22 @@
 function generateSVG(choices) {
 
+    const tagsBeforeSVG = `<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SVG Logo</title>
+    </head>
+    
+    <body>`;
+
     let shapeSVGTag = '';
+
+    const tagsAfterSVG = `
+    </body>
+    
+    </html>`;
 
     switch (choices.shape) {
 
@@ -27,7 +43,7 @@ points="${startX},200 ${eachSide / 2},0 ${endX},0"
 
     }
 
-    return shapeSVGTag;
+    return tagsBeforeSVG+shapeSVGTag+tagsAfterSVG;
 }
 
 module.exports = generateSVG;
