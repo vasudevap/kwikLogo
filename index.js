@@ -21,7 +21,7 @@ const shapeChoices = [
 // Function to write SVG file
 function createLogoSVG(logoData) {
 
-    fs.appendFile('./Logo.svg', logoData+"\n", (err) => err ? console.error(err) : "");
+    fs.appendFile('./examples/SVGLogo.svg', logoData, (err) => err ? console.error(err) : "");
 
 }
 
@@ -60,9 +60,9 @@ function init() {
 
         //use generateMarkdown to populate the template using answers
         //use writeReadme to write the populated template to the local file
-        // createLogoSVG(generateSVG(answers));
+        createLogoSVG(generateSVG(answers));
         // console.log(answers);
-        console.log(generateSVG(answers));
+        // console.log(generateSVG(answers));
         
     })
     .catch((error) => {
