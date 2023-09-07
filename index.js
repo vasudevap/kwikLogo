@@ -32,6 +32,8 @@ function init() {
         {
             type: "input",
             name: "letters",
+            // Regular expression that input must be valid against.
+
             //'1. Enter the letter/letters that would go on the logo (at most 3 letters)', 
             message: userPrompts[0],
         },
@@ -58,12 +60,18 @@ function init() {
     ])
     .then((answers) => {
 
-        //use generateMarkdown to populate the template using answers
-        //use writeReadme to write the populated template to the local file
-        createLogoSVG(generateSVG(answers));
-        // console.log(answers);
-        // console.log(generateSVG(answers));
-        
+        // with the answers we get back
+        // perform some validation:
+        //
+        // 1 - check to see if call function to create the file in the local folder
+        //
+        // if(answers.letters.length > 3)
+        if(answers.letters.length>3){
+            console.log("For best results, please use three letters at a maximum!");
+        } else {
+            createLogoSVG(generateSVG(answers));
+        }
+        init();
     })
     .catch((error) => {
         if (error.isTtyError) {

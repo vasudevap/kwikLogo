@@ -9,17 +9,14 @@
     
     <body><svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
         
-<polygon 
-        points="34.52994616207481,200 150,0 265.4700538379252,200" 
-            fill="green" />
-            
+<rect x="50" y="0" width="200" height="200" style="fill: green"/>
         <style>
         .logoTxt {
             font: italic 125px serif;
-            fill: red;
+            fill: blue;
         }
     </style>
-    <text x="75" y="150" class="logoTxt">pv</text>
+    <text x="75" y="150" class="logoTxt">pos</text>
     
  </svg>
     </body>
