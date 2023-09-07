@@ -8,17 +8,19 @@
     </head>
     
     <body><svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-            <polygon 
-points="34.52994616207481,200 150,0 265.4700538379252,200" 
-    fill="white" />
+        
+<polygon 
+        points="34.52994616207481,200 150,0 265.4700538379252,200" 
+            fill="green" />
+            
+        <style>
+        .logoTxt {
+            font: italic 125px serif;
+            fill: red;
+        }
+    </style>
+    <text x="75" y="150" class="logoTxt">pv</text>
     
-    <style>
-    .logoTxt {
-        font: italic 125px serif;
-        fill: brown;
-    }
-</style>
-<text x="75" y="150" class="logoTxt">pv</text>
  </svg>
     </body>
     
