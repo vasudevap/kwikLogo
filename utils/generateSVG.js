@@ -1,3 +1,5 @@
+const { Shape, Square, Triangle, Circle } = require("../lib/shape");
+
 function generateSVG(choices) {
 
     const tagsBeforeSVG = `<!DOCTYPE html>
@@ -11,9 +13,6 @@ function generateSVG(choices) {
     
     <body>`;
 
-    const tagSVGStart = `<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-            `;
-
     let shapeSVGTag = '';
 
     const tagsAfterSVG = `
@@ -21,45 +20,39 @@ function generateSVG(choices) {
     
     </html>`;
 
+
     switch (choices.shape) {
 
         case "circle":
-            shapeSVGTag = `
-            <circle cx="50%" cy="50%" r="100" fill="${choices.shapeColor}" /> 
-            `;
+
+            let myCircle = new Circle();
+            myCircle.setColor(choices.shapeColor);
+            myCircle.setLetters(choices.letters);
+            myCircle.setLetterColor(choices.letterColor);
+            shapeSVGTag = myCircle.render();
             break;
 
         case "triangle":
-            let eachSide = 2 * (200 / (Math.tan(Math.PI / 3)));
-            let startX = (300 - eachSide) / 2;
-            let endX = 300 - startX;
-            shapeSVGTag = `<polygon 
-points="${startX},200 ${startX + (eachSide / 2)},0 ${endX},200" 
-    fill="${choices.shapeColor}" />
-    `;
-    console.log(eachSide+" "+startX+" "+endX);
+
+            let myTriangle = new Triangle();
+            myTriangle.setColor(choices.shapeColor);
+            myTriangle.setLetters(choices.letters);
+            myTriangle.setLetterColor(choices.letterColor);
+            shapeSVGTag = myTriangle.render();
             break;
 
         case "square":
-            shapeSVGTag = `<rect x="50" y="0" width="200" height="200" style="fill: ${choices.shapeColor}"/>
-            
-            `;
+
+            let mySquare = new Square();
+            mySquare.setColor(choices.shapeColor);
+            mySquare.setLetters(choices.letters);
+            mySquare.setLetterColor(choices.letterColor);
+            shapeSVGTag = mySquare.render();
             break;
 
     }
 
-    let tagForLetters = `
-    <style>
-    .logoTxt {
-        font: italic 125px serif;
-        fill: ${choices.letterColor};
-    }
-</style>
-<text x="75" y="150" class="logoTxt">${choices.letters}</text>
-`
-
-    // font: "italic 13px sans-serif"}
-    return tagsBeforeSVG + tagSVGStart + shapeSVGTag + tagForLetters + ` </svg>` + tagsAfterSVG;
+    return tagsBeforeSVG + shapeSVGTag + tagsAfterSVG;
 }
 
 module.exports = generateSVG;
