@@ -29,7 +29,3 @@ points="${startX},200 ${eachSide/2},0 ${endX},0"
 
     return '';
 }
-
-"let x = Math.tan(1);
-
-Math.PI"

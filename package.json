@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "inquirer": "^9.2.10"
+  },
+  "name": "kwiklogo",
+  "description": "## DESCRIPTION kwikLogo is a lightweight nodeJS app that puts that artfies your projects by providing you with an SVG graphics file based on your preferences.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasudevap/kwikLogo.git"
+  },
+  "author": "PrashantVasudeva",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/vasudevap/kwikLogo/issues"
+  },
+  "homepage": "https://github.com/vasudevap/kwikLogo#readme"
+}

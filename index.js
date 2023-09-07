@@ -1,9 +1,9 @@
-// Import inquirer class to prompt user
-const inquirer = require('inquirer');
-// Import file system package to access writing and reading local files.
-const fs = require('fs');
+// Packages needed for this application
+const fs = require('fs'); // for reading writing to files
+const inquirer = require('inquirer'); // for prompting user
+const shapes = require('./lib/shape'); // for shape classes
 
-// Array of questions for user input
+// questions for user input
 const userPrompts = [
     'Enter the letter/letters that would go on the logo (at most 3 letters)',
     'Enter a color for the text (keyword or a hexadecimal number)',
@@ -60,7 +60,6 @@ function init() {
         //use generateMarkdown to populate the template using answers
         //use writeReadme to write the populated template to the local file
         createLogoSVG(generateSVG(answers));
-        <svg width="200" height="200" viewBox="0 0 100 100">…</svg>
         
     })
     .catch((error) => {
@@ -71,3 +70,6 @@ function init() {
         }
     });
 }
+
+// Function call to initialize app
+init();
