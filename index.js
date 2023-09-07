@@ -21,7 +21,7 @@ const shapeChoices = [
 // Function to write SVG file
 function createLogoSVG(logoData) {
 
-    fs.appendFile('./examples/SVGLogo.svg', logoData, (err) => err ? console.error(err) : "");
+    fs.writeFile('./examples/SVGLogo.svg', logoData, (err) => err ? console.error(err) : "");
 
 }
 
