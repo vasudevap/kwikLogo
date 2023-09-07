@@ -30,13 +30,14 @@ function generateSVG(choices) {
             break;
 
         case "triangle":
-            let eachSide = 2 * 200 * Math.tan(Math.PI / 6);
+            let eachSide = 2 * (200 / (Math.tan(Math.PI / 3)));
             let startX = (300 - eachSide) / 2;
             let endX = 300 - startX;
             shapeSVGTag = `<polygon 
-points="${startX},200 ${eachSide / 2},0 ${endX},0" 
+points="${startX},200 ${startX + (eachSide / 2)},0 ${endX},200" 
     fill="${choices.shapeColor}" />
     `;
+    console.log(eachSide+" "+startX+" "+endX);
             break;
 
         case "square":

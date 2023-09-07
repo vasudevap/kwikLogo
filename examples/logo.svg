@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SVG Logo</title>
+    </head>
+    
+    <body><svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+            <polygon 
+points="34.52994616207481,200 150,0 265.4700538379252,200" 
+    fill="white" />
+    
+    <style>
+    .logoTxt {
+        font: italic 125px serif;
+        fill: brown;
+    }
+</style>
+<text x="75" y="150" class="logoTxt">pv</text>
+ </svg>
+    </body>
+    
+    </html>
