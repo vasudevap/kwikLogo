@@ -8,16 +8,14 @@
     </head>
     
     <body><svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-        
-        <circle cx="50%" cy="50%" r="100" fill="lightgreen" /> 
-        
+        <polygon points="34.52994616207481,200 150,0 265.4700538379252,200" fill="yellow"/>
     <style>
     .logoTxt {
         font: italic 115px serif;
-        fill: white;
+        fill: red;
     }
 </style>
-<text x="90" y="150" class="logoTxt"></text>
+<text x="90" y="150" class="logoTxt">jug</text>
 
  </svg>
     </body>
