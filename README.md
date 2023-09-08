@@ -21,7 +21,10 @@ Your fastest way to a 300pxx200px logo!  Whether you're a fan of trecherous tria
 2. Ensure nodeJS is installed
 3. Ensure npm is initialized and inquirer is installed
 4. Launch the terminal from the directory of the source.
-5. Type and run: node index.js
+5. Type and run: 
+```
+node index.js
+```
 6. Enter the answers to the prompts.
 7. Look for the logo file 'logo.svg' in the examples folder.
 
