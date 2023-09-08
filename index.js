@@ -68,10 +68,10 @@ function init() {
         // if(answers.letters.length > 3)
         if(answers.letters.length>3){
             console.log("For best results, please use three letters at a maximum!");
+            init();
         } else {
             createLogoSVG(generateSVG(answers));
         }
-        init();
     })
     .catch((error) => {
         if (error.isTtyError) {
