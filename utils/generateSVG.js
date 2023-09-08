@@ -51,8 +51,21 @@ function generateSVG(choices) {
             break;
 
     }
+    let startSVGTag = `<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+        `;
+    let endSVGTag = `
+    <style>
+    .logoTxt {
+        font: italic 115px serif;
+        fill: ${choices.letterColor};
+    }
+</style>
+<text x="90" y="150" class="logoTxt">${choices.letters}</text>
+`
+        + "\n"
+        + ` </svg>`
 
-    return tagsBeforeSVG + shapeSVGTag + tagsAfterSVG;
+    return tagsBeforeSVG + startSVGTag + shapeSVGTag + endSVGTag + tagsAfterSVG;
 }
 
 module.exports = generateSVG;
