@@ -29,7 +29,7 @@ node index.js
 7. Look for the logo file 'logo.svg' in the examples folder.
 
 # MOCKUP
-[kwikLogo CLI Demo](https://drive.google.com/file/d/1n6JyInaHZHx-ETi_RZ-FEFNBPpVvDC8F/view?usp=drive_link)
+[kwikLogo CLI Demo](https://drive.google.com/file/d/1Kkw7mI3lvlBJogxI4HLC0SvaUQs8L-qn/view?usp=sharing)
 
 # USAGE
 To use the application, ensure you follow the steps in the previous section (Installation Instructions) and run the command: node index.js
