@@ -9,27 +9,37 @@ Your fastest way to a 300pxx200px logo!  Whether you're a fan of trecherous tria
 # TABLE OF CONTENTS
 
 1. [Installation](#installation)
-2. [Mockup](#mockup)
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [Tests](#tests)
-6. [License](#license)
-7. [Questions](#questions)
+2. [Source Code](#source-code)
+3. [Mockup](#mockup)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [Tests](#tests)
+7. [License](#license)
+8. [Questions](#questions)
 
 # INSTALLATION
-1. Download the source code from gitHub
+1. Download the source code from [gitHub](https://github.com/vasudevap/kwikLogo.git)
 2. Ensure nodeJS is installed
 3. Ensure npm is initialized and inquirer is installed
 4. Launch the terminal from the directory of the source.
-5. Type and run: 
-```
-node index.js
-```
+5. Type and run: `node index.js`
 6. Enter the answers to the prompts.
 7. Look for the logo file 'logo.svg' in the examples folder.
 
+# SOURCE CODE
+
+The source code for the app can be downloaded from the GitHub repository where it is maintained: [kwikLogo GitHub Repository](https://github.com/vasudevap/kwikLogo.git)
+
 # MOCKUP
-[kwikLogo CLI Demo](https://drive.google.com/file/d/1Kkw7mI3lvlBJogxI4HLC0SvaUQs8L-qn/view?usp=sharing)
+
+## Video
+To view a video walkthrough of the kwikLogo app usage and testing, click: [CLI Demo](https://drive.google.com/file/d/1Kkw7mI3lvlBJogxI4HLC0SvaUQs8L-qn/view?usp=sharing)
+
+## Output Examples
+To view examples of output files, download and view them in the browser:
+[Example 1: Circle](https://github.com/vasudevap/kwikLogo/blob/main/examples/expl-circle.svg)
+[Example 2: Triangle](https://github.com/vasudevap/kwikLogo/blob/main/examples/expl-triangle.svg)
+[Example 3: Square](https://github.com/vasudevap/kwikLogo/blob/main/examples/expl-square.svg)
 
 # USAGE
 To use the application, ensure you follow the steps in the previous section (Installation Instructions) and run the command: node index.js
