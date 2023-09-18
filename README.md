@@ -37,9 +37,9 @@ To view a video walkthrough of the kwikLogo app usage and testing, click: [CLI D
 
 ## Output Examples
 To view examples of output files, download and view them in the browser:
-[Example 1: Circle](https://github.com/vasudevap/kwikLogo/blob/main/examples/expl-circle.svg)
-[Example 2: Triangle](https://github.com/vasudevap/kwikLogo/blob/main/examples/expl-triangle.svg)
-[Example 3: Square](https://github.com/vasudevap/kwikLogo/blob/main/examples/expl-square.svg)
+- [Example 1: Circle](https://github.com/vasudevap/kwikLogo/blob/main/examples/expl-circle.svg)
+- [Example 2: Triangle](https://github.com/vasudevap/kwikLogo/blob/main/examples/expl-triangle.svg)
+- [Example 3: Square](https://github.com/vasudevap/kwikLogo/blob/main/examples/expl-square.svg)
 
 # USAGE
 To use the application, ensure you follow the steps in the previous section (Installation Instructions) and run the command: node index.js
